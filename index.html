@@ -4,48 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/modern-normalizer.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <header>
-    <nav class="nav">
-      <a href="./index.html" class="logo" title="logo">
-        <img src="./images/Logo.svg" alt="Наш логотип">
-      </a>
-      <ul class="nav-menu">
+  <header class="page-header">
+    <div class="container">
+      <nav class="nav">
+        <a href="./index.html" class="logo" title="logo">
+          <img src="./images/Logo.svg" alt="Наш логотип">
+        </a>
+        <ul class="nav-menu">
+          <li class="item">
+            <a href="#about-us" class="link" title="about us">
+              О нас
+            </a>
+          </li>
+          <li class="item">          
+            <a href="#services" class="link" title="services & prices">
+              Услуги и цены
+            </a>
+          </li>
+          <li class="item">
+            <a href="#team" class="link" title="foremen">
+              Мастера
+            </a>
+          </li>
+          <li class="item">
+            <a href="#contacts" class="link" title="contacts">
+              Контакты
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="header-contacts">
         <li class="item">
-          <a href="#about-us" class="link" title="about us">
-            О нас
+          <a class="button link" href="tel:+380441111111" title="+38 044 111 11 11 ">
+            +38 044 111 11 11
           </a>
         </li>
-        <li class="item">          
-          <a href="#services" class="link" title="services & prices">
-            Услуги и цены
-          </a>
-        </li>
         <li class="item">
-          <a href="#team" class="link" title="foremen">
-            Мастера
-          </a>
-        </li>
-        <li class="item">
-          <a href="#contacts" class="link" title="contacts">
-            Контакты
-          </a>
+          <a class="button link" href="#booking" title="book now">Онлайн запись</a>
         </li>
       </ul>
-    </nav>
-    <ul class="header-contacts">
-      <li>
-        <a class="link" href="tel:+380441111111" title="+38 044 111 11 11 ">
-          +38 044 111 11 11
-        </a>
-      </li>
-      <li>
-        <a class="button" href="#booking" title="book now">Онлайн запись</a>
-      </li>
-    </ul>
+    </div>    
   </header>
   <main>
 
