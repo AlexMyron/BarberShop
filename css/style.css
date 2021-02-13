@@ -22,17 +22,9 @@ body {
   letter-spacing: 0.02em;
 }
 
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.link {
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
 
 /* Header */
 .container {
@@ -52,8 +44,9 @@ img {
 .page-header > .container {
   display: flex;
   align-items: center;
+  position: relative;
   
-  padding-top: 40px;
+  padding-top: 32px;
 }
 
 .page-header .nav {
@@ -64,6 +57,10 @@ img {
 .nav > .nav-menu {
   display: flex;
   margin-left: 71px;
+}
+
+.nav-menu > .item {
+  padding: 12px 0;
 }
 
 .nav-menu > .item + .item {
@@ -96,12 +93,14 @@ img {
   margin-left: 40px;
 }
 
-.header-contacts .link {
+.button {
   padding-top: 12px;
   padding-bottom: 12px;
   padding-right: 20px;
   padding-left: 20px;
 
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
   color: var(--third-color);
   font-weight: 600;
   font-family: "Open sans", sans-serif;  
@@ -109,27 +108,38 @@ img {
   line-height: 1.33;
   letter-spacing: 0.1em;
   text-decoration: none;
-}
-
-.button {
-  color: var(--third-color);
-  background-color: transparent;
   text-transform: uppercase;
-  border: 1px solid transparent;
 }
 
-.button:hover,
-.button:focus {    
-  border: 1px solid var(--accent-color);
-  border-radius: 25px;
+.header-contacts .phone {
+  border: none;
 }
 
-/* Hero */
-.hero{
-  background-color: var(--grey-bg-color);
+.page-header .social-list {
+  display: flex;
+
+  position: absolute;
+  transform: rotate(-90deg);
+  bottom: -499px;
+  left: -26px;
 }
+
+.social-list > .item {
+  margin-left: 40px;
+}
+
+/* .social-list > .item:first-child::before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 20px;
+  border-bottom: 1px solid  var(--secondary-color);
+}  */
 
 .social-list .link{
+  padding: 12px 0;
+  display: block;
+
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -142,6 +152,19 @@ img {
 
 .social-list .link:hover {
   color: var(--accent-color);
+}
+
+/* Hero */
+.hero{
+  background-color: var(--grey-bg-color);
+}
+
+.hero > .container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 184px;
+  padding-bottom: 40px;
+  padding-left: 215px;
 }
 
 .subtitle-text {
@@ -161,6 +184,11 @@ img {
   color: var(--secondary-color);
 }
 
+.hero .title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .title {
   color: var(--third-color);
 
@@ -172,6 +200,10 @@ img {
   letter-spacing: 0.05em;
 }
 
+.hero .description {
+  margin-bottom: 142px;
+}
+
 .description {
   color: var(--grey-color-100);
 
@@ -179,24 +211,64 @@ img {
   letter-spacing: 0.02em;
 }
 
-.hero .button {
-  font-family: "Open sans", sans-serif;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-align: left;
+.hero .hero-btns {
+  align-self: flex-end;
 }
 
-.hero .button.grey {
+.hero-btns > .btn {
+  padding-bottom: 8px;
+  width: 60px;
+  border-bottom: 1px solid;
+
+  background-color: transparent;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.364;
+  text-align: left;
+  letter-spacing: 0.1em;
+
+  cursor: pointer;
+}
+
+.hero-btns > .btn:last-child {
+  margin-left: 26px;
+  text-align: right;
+}
+
+.hero-btns > .btn.grey {
   color: var(--grey-color-60);
 }
 
-.hero .button.white {
+.hero-btns > .btn.white {
   color: var(--third-color);
 }
 
 /* About Us */
+.about > .container {
+  display: flex;
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.about .about-img {
+  display: flex;
+}
+
+.about-img > .thumb:not(:first-child) {
+  margin-left: 30px;
+} 
+
+.about .about-description {
+  margin-left: 64px;
+  width: 50%;
+}
+
+.about-description > .section-title {
+  margin: 20px 0;
+}
+
 .section-title {
   color: var(--secondary-color);
 
@@ -207,6 +279,10 @@ img {
   letter-spacing: 0.05em;
 }
 
+.about-description > .text {
+  margin: 20px 0 40px 0;
+}
+
 .text {
   font-size: 14px;
   line-height: 1.86;
@@ -214,7 +290,7 @@ img {
 }
 
 .button.white {
-  color: var(--third-color);
+  color: var(--secondary-color);
 }
 
 /* Services and Prices */
