@@ -22,15 +22,10 @@ body {
   letter-spacing: 0.02em;
 }
 
-.link {
-}
-
-
 /* Header */
 .container {
   width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding: 130px 15px;
   margin-right: auto;
   margin-left: auto;
 
@@ -42,6 +37,8 @@ body {
 }
 
 .page-header > .container {
+  padding-bottom: 0;
+  padding-top: 0;
   display: flex;
   align-items: center;
   position: relative;
@@ -221,7 +218,7 @@ body {
   border-bottom: 1px solid;
 
   background-color: transparent;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 11px;
@@ -248,8 +245,6 @@ body {
 /* About Us */
 .about > .container {
   display: flex;
-  padding-top: 130px;
-  padding-bottom: 130px;
 }
 
 .about .about-img {
@@ -298,16 +293,44 @@ body {
   background-color: var(--grey-bg-color);
 }
 
-.services .prices-list {
-  color: var(--grey-color-100);
+.services .table-container {
+  display: flex;
+  margin-bottom: 50px;
+}
 
+.services .section-title {
+  margin-top: 20px;
+  margin-bottom: 44px;
+}
+
+.table-container > .prices-list {
+  padding: 30px 40px;
+  width: 50%;
+
+  color: var(--grey-color-100);
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
 }
 
+.prices-list tr {
+  display: block;
+}
+
+.prices-list tr:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .section-title.white {
   color: var(--third-color);
+}
+
+.button.service {
+  display: block;
+  margin: 0 auto;
+  width: 160px;
+
+  letter-spacing: 0.07em;
 }
 
 /* Features */
