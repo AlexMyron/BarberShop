@@ -177,7 +177,7 @@
             <p class="subtitle-text">Подарков постоянным клиентам</p>
           </li>
         </ul>
-        <div>
+        <div class="features-description">
           <p class="subtitle-text secondary">
             старая традиционная школа
           </p>
@@ -196,61 +196,61 @@
           для настоящих ценителей атмосферы
         </p>
         <h2 class="section-title">Наши мастера</h2>
-        <ul>
-          <li>
+        <ul class="team-list">
+          <li class="item">
             <img src="./images/foreman-1.jpg" alt="Foreman" width="370">
             <h3 class="name">John Smith</h3>
             <p class="occupation">Extreme Barber</p>
             <ul class="team-social-list">
               <li class="item">
-                <a href="" title="instagram"><img src="./images/instagram.svg" alt="instagram link"></a>
+                <a class="social-link instagram" href="" title="instagram"></a>
               </li>
               <li class="item">
-                <a href="" title="twitter"><img src="./images/twitter.svg" alt="twitter link"></a>
+                <a class="social-link twitter" href="" title="twitter"></a>
               </li>
               <li class="item">
-                <a href="" title="facebook"><img src="./images/facebook.svg" alt="facebook link"></a>
+                <a class="social-link facebook" href="" title="facebook"></a>
               </li>
               <li class="item">
-                <a href="" title="linkedin"><img src="./images/linkedin.svg" alt="linkedin link"></a>
+                <a class="social-link linkedin" href="" title="linkedin"></a>
               </li>
             </ul>
           </li>
-          <li>
+          <li class="item">
             <img src="./images/foreman-2.jpg" alt="Foreman" width="370">
             <h3 class="name">Michele Doe</h3>
             <p class="occupation">Extreme Barber</p>
             <ul class="team-social-list">
               <li class="item">
-                <a href="" title="instagram"><img src="./images/instagram.svg" alt="instagram link"></a>
+                <a class="social-link instagram" href="" title="instagram"></a>
               </li>
               <li class="item">
-                <a href="" title="twitter"><img src="./images/twitter.svg" alt="twitter link"></a>
+                <a class="social-link twitter" href="" title="twitter"></a>
               </li>
               <li class="item">
-                <a href="" title="facebook"><img src="./images/facebook.svg" alt="facebook link"></a>
+                <a class="social-link facebook" href="" title="facebook"></a>
               </li>
               <li class="item">
-                <a href="" title="linkedin"><img src="./images/linkedin.svg" alt="linkedin link"></a>
+                <a class="social-link linkedin" href="" title="linkedin"></a>
               </li>
             </ul>
           </li>
-          <li>
+          <li class="item">
             <img src="./images/foreman-3.jpg" alt="Foreman" width="370">
             <h3 class="name">Alan Black</h3>
             <p class="occupation">Extreme Barber</p>
             <ul class="team-social-list">
               <li class="item">
-                <a href="" title="instagram"><img src="./images/instagram.svg" alt="instagram link"></a>
+                <a class="social-link instagram" href="" title="instagram"></a>
               </li>
               <li class="item">
-                <a href="" title="twitter"><img src="./images/twitter.svg" alt="twitter link"></a>
+                <a class="social-link twitter" href="" title="twitter"></a>
               </li>
               <li class="item">
-                <a href="" title="facebook"><img src="./images/facebook.svg" alt="facebook link"></a>
+                <a class="social-link facebook" href="" title="facebook"></a>
               </li>
               <li class="item">
-                <a href="" title="linkedin"><img src="./images/linkedin.svg" alt="linkedin link"></a>
+                <a class="social-link linkedin" href="" title="linkedin"></a>
               </li>
             </ul>
           </li>
@@ -259,23 +259,23 @@
     </section>
 
     <!-- Photo Gallery -->
-    <section class="gallegy" id="gallegy">
+    <section class="gallery" id="gallery">
       <div class="container">
-        <h2 class="section-title">Gallery</h2>
+        <h2 class="section-title visually-hidden">Gallery</h2>
         <p class="subtitle-text secondary">На латинском языке “барба” означает “борода”</p>
         <ul class="gallery-list">
           <li class="item">
             <img src="./images/photo-gallery-1.jpg" alt="Barber" width="270">
           </li>
-          <li>
+          <li class="item">
             <img src="./images/photo-gallery-2.jpg" alt="Barber" width="270">
           </li>
-          <li>
+          <li class="item">
             <img src="./images/photo-gallery-3.jpg" alt="Barber" width="270">
           </li>
-          <li>
+          <li class="item">
             <img src="./images/photo-gallery-4.jpg" alt="Barber" width="270">
-          </li>
+          </li>          
         </ul>
       </div>
     </section>
@@ -283,16 +283,16 @@
     <!-- Booking & Contacts -->
     <section class="contacts" id="contacts">
       <div class="container">
-        <div>
+        <div class="form-wrapper">
           <h2 class="section-title white" id="booking">Онлайн-запись</h2>
-          <form>
-            <input type="text" name="name" value="">
-            <input type="text" name="name">
-            <textarea name="Сообщение" cols="30" rows="10"></textarea>
-            <button class="button">отправить</button>
+          <form class="oder-form">
+            <input type="text" name="name" id="name" placeholder="имя*">
+            <input type="text" name="tel" id="tel" placeholder="телефон*">
+            <textarea name="msg" id="msg" cols="20" rows="3" placeholder="сообщение"></textarea>
+            <button class="button link">отправить</button>
           </form>
         </div>
-        <div>
+        <div class="contacts-wrapper">
           <h2 class="section-title white">Контакты</h2>
           <address class="address">
             <a class="link" href="">ул. Васильковая, 7А<br/>Киев, 08132</a>
@@ -305,14 +305,15 @@
       </div>
     </section>
   </main>
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <p class="copy">&copy; Copyright 2020</p>
       <ul  class="social-list">
-        <li>
+        <li class="item">
           <a class="link" href="" title="instagram link">Instagram</a>
         </li>
-        <li>
+        <li class="item">
           <a class="link" href="" title="youtube link">Youtybe</a>
         </li>
       </ul>

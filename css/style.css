@@ -10,6 +10,8 @@
   --first-bg-color: #ffffff;
   --second-bg-color: #F7F7F7;
   --grey-bg-color: #4F4F4F;
+  --booking-bg-color: #191C26;
+  --services-bg-color: #111319;
 }
 
 body {
@@ -20,6 +22,10 @@ body {
   font-size: 18px;  
   line-height: 1.67;
   letter-spacing: 0.02em;
+}
+
+a {
+  display: block;
 }
 
 /* Header */
@@ -38,12 +44,10 @@ body {
 
 .page-header > .container {
   padding-bottom: 0;
-  padding-top: 0;
+  padding-top: 32px;
   display: flex;
   align-items: center;
   position: relative;
-  
-  padding-top: 32px;
 }
 
 .page-header .nav {
@@ -56,17 +60,13 @@ body {
   margin-left: 71px;
 }
 
-.nav-menu > .item {
-  padding: 12px 0;
-}
-
 .nav-menu > .item + .item {
   margin-left: 40px;
 }
 
 .nav-menu .link {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   color: var(--third-color);
   font-size: 12px;
@@ -112,9 +112,11 @@ body {
   border: none;
 }
 
-.page-header .social-list {
+.social-list {
   display: flex;
+}
 
+.page-header .social-list {
   position: absolute;
   transform: rotate(-90deg);
   bottom: -499px;
@@ -290,7 +292,13 @@ body {
 
 /* Services and Prices */
 .services {
-  background-color: var(--grey-bg-color);
+  width: 1280px;
+  margin: 0 auto;
+
+  background-color: var(--services-bg-color);
+  background-image: url(../images/services-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .services .table-container {
@@ -330,21 +338,43 @@ body {
   margin: 0 auto;
   width: 160px;
 
-  letter-spacing: 0.07em;
+  letter-spacing: 0.05em;
 }
 
 /* Features */
+.features > .container {
+  display: flex;
+  padding: 121px 70px 130px 100px;
+}
+
 .features .features-list {
-  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+
+  text-align: center;
 }
 
 .features-list .item {
+  padding: 20px 24px;
+  width: 170px;
+  height: 133px;
   background-color: var(--second-bg-color);
 }
 
-.features-list .number {
-  color: var(--secondary-color);
+.features-list > .item:nth-child(2n + 1) {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
 
+.features-list > .item:nth-child(2n) {
+  margin-top: 30px;
+}
+
+
+.features-list .number {
+  margin-bottom: 6px;
+  
+  color: var(--secondary-color);
   font-weight: 700;
   font-size: 42px;
   line-height: 1.36;
@@ -353,8 +383,24 @@ body {
 
 .features-list .subtitle-text {
   color: var(--secondary-color);
-
+  
   text-transform: none;
+}
+
+.subtitle-text.secondary::before {
+  content: '';
+  display: inline-block;
+  width: 60px;
+  margin-right: 20px;
+  border-bottom: 1px solid;
+}
+
+.features .features-description {
+  padding-top: 9px;
+}
+
+.features-description > .section-title {
+  margin: 20px 0;
 }
 
 /* Our Foremen */
@@ -362,24 +408,43 @@ body {
   background-color: var(--second-bg-color);
 }
 
-.team li {
-  list-style: none;
+.team > .container {
+  padding: 152px 15px 108px 15px;
+}
+
+.team .team-list {
+  display: flex;
+}
+
+.team-list > .item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.team-list > .item {
+  flex-basis: calc((100% - 60px) / 3);
+  display: flex;
+  flex-direction: column;
+}
+
+.team-social-list > .item:not(:first-child) {
+  margin-left: 10px;
 }
 
 .team .name {
-  color: var(--secondary-color);
+  margin: 30px 0 8px 0;
 
+  color: var(--secondary-color);
   font-weight: normal;
   font-size: 18px;
   line-height: 1.39;
   letter-spacing: 0.02em;
-  
   text-align: center;
 }
 
 .team .occupation {
-  color: var(--accent-color);
-  
+  margin-bottom: 30px;
+
+  color: var(--accent-color);  
   font-size: 14px;
   line-height: 1.36;
   letter-spacing: 0.02em;
@@ -387,15 +452,137 @@ body {
   text-align: center;
 }
 
-.team-social-list .item {
-  background-color: var(--first-bg-color);
+.item > .team-social-list {
+  display: flex;
+  margin: 0 auto;
+}
+
+.team-social-list .social-link {
+  display: inline-block;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+
+.social-link.instagram {
+  background: var(--third-color) url(../images/instagram.svg) no-repeat center;
+}
+
+.social-link.twitter {
+  background: var(--third-color) url(../images/twitter.svg) no-repeat center;
+}
+
+.social-link.facebook {
+  background: var(--third-color) url(../images/facebook.svg) no-repeat center;
+}
+
+.social-link.linkedin {
+  background: var(--third-color) url(../images/linkedin.svg) no-repeat center;
 }
 
 /* Photo-Gallery */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.gallery .subtitle-text {
+  margin-bottom: 44px;
+}
+
+.gallery .gallery-list {
+  display: flex;
+}
+
+.gallery-list > .item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.gallery-list > .item {
+  flex-basis: calc(100% / 4);
+}
 
 /* Booking & Contacts */
 .contacts {
-  background-color: var(--grey-bg-color);
+  width: 1280px;
+  margin: 0 auto;
+
+  background-color: var(--booking-bg-color);
+  background-image: url(../images/contacts-bg.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+
+}
+
+.contacts > .container {
+  display: flex;
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.form-wrapper,
+.contacts-wrapper {
+  width: 50%;
+}
+
+.form-wrapper > .section-title {
+  margin-bottom: 44px;
+}
+
+.oder-form input[name='name'] {
+  width: 270px;
+  margin-right: 30px;
+  padding-bottom: 8px;
+}
+
+.oder-form input[name='tel'] {
+  width: 270px;
+  padding-bottom: 8px;
+}
+
+.oder-form textarea[name='msg'] {
+  width: 560px;
+  margin-top: 40px;
+  margin-bottom: 44px;
+}
+
+.oder-form:hover {
+  color: var(--third-color);
+
+}
+
+.oder-form input,
+.oder-form textarea {
+  color: var(--grey-color-40);
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--grey-color-40);
+}
+
+.oder-form > .button {
+  background-color: transparent;
+}
+
+/* CONTACTS-WRAPPER */
+.contacts .contacts-wrapper {
+  padding-left: 100px;
+}
+
+.contacts-wrapper > .section-title {
+  margin-bottom: 40px;
+}
+
+.address > .link + .link {
+  margin-top: 20px;
 }
 
 .address .link,
@@ -415,6 +602,9 @@ body {
 }
 
 .contacts .title-time {
+  margin-top: 70px;
+  margin-bottom: 20px;
+
   color: var(--third-color);
 
   font-weight: 600;
@@ -426,6 +616,17 @@ body {
 }
 
 /* Footer */
+.footer > .container {
+  display: flex;
+  align-items: center;
+  padding-bottom: 44px;
+  padding-top: 44px;
+}
+
+.footer .social-list {
+  margin-left: auto;
+}
+
 .footer .copy {
   color: var(--grey-color-100);
   
