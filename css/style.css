@@ -35,7 +35,7 @@ a {
   margin-right: auto;
   margin-left: auto;
 
-  outline: 1px solid orange;
+  /* outline: 1px solid orange; */
 }
 
 .page-header {
