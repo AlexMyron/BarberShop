@@ -34,8 +34,6 @@ a {
   padding: 130px 15px;
   margin-right: auto;
   margin-left: auto;
-
-  /* outline: 1px solid orange; */
 }
 
 .page-header {
@@ -113,6 +111,8 @@ a {
   padding-bottom: 12px;
   padding-right: 20px;
   padding-left: 20px;
+  width: 164px;
+  margin: 0 auto;
 
   border: 1px solid var(--accent-color);
   border-radius: 25px;
@@ -306,7 +306,7 @@ a {
 }
 
 .about-description > .text {
-  margin: 20px 0 40px 0;
+  margin: 20px 0 28px 0;
 }
 
 .text {
@@ -416,7 +416,7 @@ a {
   text-transform: none;
 }
 
-.subtitle-text.secondary::before {
+.subtitle-text::before {
   content: '';
   display: inline-block;
   width: 60px;
@@ -439,6 +439,11 @@ a {
 
 .team > .container {
   padding: 152px 15px 108px 15px;
+}
+
+.team .section-title {
+  margin-top: 20px;
+  margin-bottom: 44px;
 }
 
 .team .team-list {
