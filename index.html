@@ -7,15 +7,21 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/modern-normalizer.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
   <header class="page-header">
     <div class="thumb-bg"></div>
     <div class="container">
       <nav class="nav">
-        <a href="./index.html" class="logo" title="logo">
-          <img src="./images/Logo.svg" alt="Наш логотип">
+        <a href="./index.html" class="logo animate__flipInX" title="logo">
+          <svg class="logo-icon" width="68">
+            <use href="./images/icons/sprite.svg#logo"></use>
+          </svg>
         </a>
         <ul class="nav-menu">
           <li class="item">
@@ -204,16 +210,32 @@
             <p class="occupation">Extreme Barber</p>
             <ul class="team-social-list">
               <li class="item">
-                <a class="social-link instagram" href="" title="instagram"></a>
+                <a class="social-link" href="" title="instagram">
+                  <svg class="social-icon" width="20">
+                    <use href="./images/icons/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
               </li>
               <li class="item">
-                <a class="social-link twitter" href="" title="twitter"></a>
+                <a class="social-link" href="" title="twitter">
+                  <svg class="social-icon" width="20">
+                    <use href="./images/icons/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
               </li>
               <li class="item">
-                <a class="social-link facebook" href="" title="facebook"></a>
+                <a class="social-link" href="" title="facebook">
+                  <svg class="social-icon" width="20">
+                    <use href="./images/icons/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
               </li>
               <li class="item">
-                <a class="social-link linkedin" href="" title="linkedin"></a>
+                <a class="social-link" href="" title="linkedin">
+                  <svg class="social-icon" width="20">
+                    <use href="./images/icons/sprite.svg#linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </li>
@@ -223,16 +245,32 @@
             <p class="occupation">Extreme Barber</p>
             <ul class="team-social-list">
               <li class="item">
-                <a class="social-link instagram" href="" title="instagram"></a>
+                <a class="social-link" href="" title="instagram">
+                  <svg class="social-icon" width="20">
+                    <use href="./images/icons/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
               </li>
               <li class="item">
-                <a class="social-link twitter" href="" title="twitter"></a>
+                <a class="social-link" href="" title="twitter">
+                  <svg class="social-icon" width="20">
+                    <use href="./images/icons/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
               </li>
               <li class="item">
-                <a class="social-link facebook" href="" title="facebook"></a>
+                <a class="social-link" href="" title="facebook">
+                  <svg class="social-icon" width="20">
+                    <use href="./images/icons/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
               </li>
               <li class="item">
-                <a class="social-link linkedin" href="" title="linkedin"></a>
+                <a class="social-link" href="" title="linkedin">
+                  <svg class="social-icon" width="20">
+                    <use href="./images/icons/sprite.svg#linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </li>
@@ -242,16 +280,32 @@
             <p class="occupation">Extreme Barber</p>
             <ul class="team-social-list">
               <li class="item">
-                <a class="social-link instagram" href="" title="instagram"></a>
+                <a class="social-link" href="" title="instagram">
+                  <svg class="social-icon" width="20">
+                    <use href="./images/icons/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
               </li>
               <li class="item">
-                <a class="social-link twitter" href="" title="twitter"></a>
+                <a class="social-link" href="" title="twitter">
+                  <svg class="social-icon" width="20">
+                    <use href="./images/icons/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
               </li>
               <li class="item">
-                <a class="social-link facebook" href="" title="facebook"></a>
+                <a class="social-link" href="" title="facebook">
+                  <svg class="social-icon" width="20">
+                    <use href="./images/icons/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
               </li>
               <li class="item">
-                <a class="social-link linkedin" href="" title="linkedin"></a>
+                <a class="social-link" href="" title="linkedin">
+                  <svg class="social-icon" width="20">
+                    <use href="./images/icons/sprite.svg#linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </li>
@@ -287,18 +341,33 @@
         <div class="form-wrapper">
           <h2 class="section-title white" id="booking">Онлайн-запись</h2>
           <form class="oder-form">
-            <input type="text" name="name" id="name" placeholder="имя*">
-            <input type="text" name="tel" id="tel" placeholder="телефон*">
-            <textarea name="msg" id="msg" cols="20" rows="3" placeholder="сообщение"></textarea>
-            <button class="button link">отправить</button>
+            <input type="text" class="form-input" name="name" id="name" placeholder="имя*">
+            <input type="tel" class="form-input" name="tel" id="tel" placeholder="телефон*">
+            <textarea class="form-msg" name="msg" id="msg" cols="20" rows="4" placeholder="сообщение"></textarea>
+            <button class="button link" type="submit">отправить</button>
           </form>
         </div>
         <div class="contacts-wrapper">
           <h2 class="section-title white">Контакты</h2>
           <address class="address">
-            <a class="link" href="">ул. Васильковая, 7А<br/>Киев, 08132</a>
-            <a class="link" href="tel:+380441111111">+38 044 111 11 11</a>
-            <a class="link underline" href="mailto:barbershop@email.com">barbershop@email.com</a>
+            <a class="link" href="">
+              <svg class="icon-address" width="24" height="24">
+                <use href="./images/icons/sprite.svg#map"></use>
+              </svg>
+              ул. Васильковая, 7А<br/>Киев, 08132
+            </a>
+            <a class="link" href="tel:+380441111111">
+              <svg class="icon-address" width="24" height="24">
+                <use href="./images/icons/sprite.svg#phone"></use>
+              </svg>
+              +38 044 111 11 11
+            </a>
+            <a class="link underline" href="mailto:barbershop@email.com">
+              <svg class="icon-address" width="24" height="24">
+                <use href="./images/icons/sprite.svg#mail"></use>
+              </svg>
+              barbershop@email.com
+            </a>
           </address>
           <h3 class="title-time">время работы</h3>
           <p class="time">Ежедневно с 9:00 до 22:00</p>
