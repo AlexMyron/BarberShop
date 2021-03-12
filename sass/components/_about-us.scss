@@ -1,0 +1,22 @@
+.img-list {
+  display: flex;
+}
+
+.img-list__thumb:not(:first-child) {
+  margin-left: 30px;
+} 
+
+.about-us__description {
+  margin-left: 64px;
+  width: 50%;
+}
+
+.text {
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+}
+
+.about-us__text {
+  margin: 20px 0 28px 0;
+}

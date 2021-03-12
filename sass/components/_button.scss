@@ -1,0 +1,46 @@
+.button {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 20px;
+  padding-left: 20px;
+  width: 164px;
+
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  color: var(--third-color);
+  font-weight: 600;
+  font-family: "Open sans", sans-serif;  
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  background-color: transparent;
+
+  transition: background-color var(--transition-duration) var(--timing-function), color var(--transition-duration) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--third-color);
+  }
+
+  &--phone {
+    border: none;
+  }
+
+  &--white {
+    margin-right: auto;
+
+    color: var(--secondary-color);
+  }
+
+  &--services {
+    display: block;
+    margin: 0 auto;
+    width: 160px;
+  
+    letter-spacing: 0.07em;
+  }
+}

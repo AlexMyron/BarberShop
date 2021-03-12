@@ -1,0 +1,19 @@
+body {
+  color: var(--primary-color);
+  background-color: var(--first-bg-color);
+
+  font-family: "Open sans", sans-serif;
+  font-size: 18px;  
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  display: block;
+}

@@ -1,0 +1,38 @@
+.features__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  text-align: center;
+}
+
+.features__item {
+  padding: 20px 24px;
+  width: 170px;
+  height: 133px;
+  background-color: var(--second-bg-color);
+}
+
+.features__item {
+  &:nth-child(2n + 1) {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+
+  &:nth-child(2n) {
+    margin-top: 30px;
+  }
+}
+
+.features__number {
+  margin-bottom: 6px;
+  
+  color: var(--secondary-color);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  letter-spacing: 0.05em;
+}
+
+.features-description {
+  padding-top: 9px;
+}

@@ -1,0 +1,60 @@
+.title {
+  color: var(--third-color);
+  
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  
+  &--margin {
+    margin-top: 20px;
+    margin-bottom: 20px;    
+  }
+}
+
+.description {
+  color: var(--grey-color-100);
+
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  &--margin {
+    margin-bottom: 142px;
+  }
+}
+
+.navy-buttons {
+  align-self: flex-end;
+}
+
+.btn {
+  padding-bottom: 8px;
+  width: 60px;
+  border-bottom: 1px solid;
+
+  background-color: transparent;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.364;
+  text-align: left;
+  letter-spacing: 0.1em;
+
+  cursor: pointer;
+
+  &:last-child {
+    margin-left: 26px;
+    text-align: right;
+  }
+
+  &--grey {
+    color: var(--grey-color-60);
+  }
+
+  &--white {
+    color: var(--third-color);
+  }
+}

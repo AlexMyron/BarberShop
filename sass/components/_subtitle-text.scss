@@ -1,0 +1,37 @@
+.subtitle-text {
+  display: flex;
+  align-items: center;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+
+  text-transform: uppercase;
+
+  &--grey {
+    color: var(--grey-color-60);
+  }
+
+  &--secondary {
+    color: var(--secondary-color);
+  }
+
+  &--no-transform {
+    color: var(--secondary-color);
+    
+    text-transform: none;
+  }
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 60px;
+    margin-right: 20px;
+    border-bottom: 1px solid;
+  }
+
+  &--no-before::before {
+    display: none;
+  }
+}

@@ -1,0 +1,244 @@
+@import './components/modern-normalizer';
+@import './utils/variables';
+@import './utils/mixins';
+@import './components/base';
+@import './components/container';
+@import './components/header';
+@import './components/button';
+@import './components/social-list';
+@import './components/hero';
+@import './components/about-us'; 
+@import './components/section-title';
+@import './components/subtitle-text';
+@import './components/services'; 
+@import './components/features'; 
+@import './components/team'; 
+
+@import './components/modal';
+
+/* Hero */
+
+/* About Us */
+
+
+/* Services and Prices */
+
+
+/* Features */
+
+
+/* Our Foremen */
+
+
+/* Photo-Gallery */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.gallery .subtitle-text {
+  margin-bottom: 44px;
+}
+
+.gallery .gallery-list {
+  display: flex;
+}
+
+.gallery-list > .item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.gallery-list > .item {
+  flex-basis: calc(100% / 4);
+}
+
+/* Booking & Contacts */
+.contacts {
+  width: 1280px;
+  margin: 0 auto;
+
+  background-color: var(--booking-bg-color);
+  background-image: url(../images/contacts-bg.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+
+}
+
+.contacts > .container {
+  display: flex;
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.form-wrapper,
+.contacts-wrapper {
+  width: 50%;
+}
+
+.form-wrapper > .section-title {
+  margin-bottom: 44px;
+}
+
+.oder-form input[name='name'] {
+  width: calc(100% / 2 - 30px);
+  margin-right: 30px;
+  padding-bottom: 8px;
+  padding-right: 30px;
+}
+
+.oder-form input[name='tel'] {
+  width: calc(100% / 2 - 30px);
+  padding-bottom: 8px;
+}
+
+.oder-form textarea[name='msg'] {
+  width: calc(100% - 25px);
+  margin-top: 40px;
+  margin-bottom: 44px;
+  resize: none;
+}
+
+.oder-form .form-input,
+.oder-form .form-msg {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.363;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: none;
+  border-bottom: 1px solid var(--grey-color-40);
+
+  color: var(--grey-color-40);
+  background: transparent;
+
+  transition: border-bottom-color var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.oder-form .form-input::placeholder,
+.oder-form .form-msg::placeholder {
+  transition: color var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.oder-form .form-input:hover,
+.oder-form .form-input:focus,
+.oder-form .form-msg:hover,
+.oder-form .form-msg:focus {
+  border-bottom-color: white;
+  color: var(--third-color);
+  outline: none;
+}
+
+.oder-form .form-input:hover::placeholder,
+.oder-form .form-input:focus::placeholder,
+.oder-form .form-msg:hover::placeholder,
+.oder-form .form-msg:focus::placeholder {
+  color: var(--third-color);
+}
+
+.oder-form > .button {
+  background-color: transparent;
+  transition: background-color var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.oder-form > .button:hover,
+.oder-form > .button:focus {
+  background-color: var(--accent-color);
+}
+
+/* CONTACTS-WRAPPER */
+.contacts .contacts-wrapper {
+  padding-left: 100px;
+}
+
+.contacts-wrapper > .section-title {
+  margin-bottom: 40px;
+}
+
+.address > .link + .link {
+  margin-top: 20px;
+}
+
+.address .link,
+.contacts .time {
+  color: var(--grey-color-100);
+
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  text-decoration: none;
+}
+
+.address .link {
+  display: flex;
+  align-items: center;
+}
+
+.address .link.underline {
+  text-decoration: underline;
+}
+
+.contacts .title-time {
+  margin-top: 70px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+
+  color: var(--third-color);
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+
+  text-transform: uppercase;
+}
+
+.contacts-wrapper > .title-time::before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+
+  background-color: var(--grey-color-40);
+}
+
+.address .icon-address {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+
+  fill: currentColor;
+}
+
+/* Footer */
+.footer > .container {
+  display: flex;
+  align-items: center;
+  padding-bottom: 44px;
+  padding-top: 44px;
+}
+
+.footer .social-list {
+  margin-left: auto;
+}
+
+.footer .copy {
+  color: var(--grey-color-100);
+  
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+}

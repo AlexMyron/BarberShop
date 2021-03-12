@@ -1,0 +1,72 @@
+.team {
+  background-color: var(--second-bg-color);
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-list__item {
+  flex-basis: calc((100% - 60px) / 3);
+  display: flex;
+  flex-direction: column;
+
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+
+.social-contacts__item:not(:first-child) {
+  margin-left: 10px;
+}
+
+.team__name {
+  margin: 30px 0 8px 0;
+
+  color: var(--secondary-color);
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.team__occupation {
+  margin-bottom: 30px;
+
+  color: var(--accent-color);  
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.02em;
+
+  text-align: center;
+}
+
+.social-contacts {
+  display: flex;
+  margin: 0 auto;
+}
+
+.social-contacts__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+
+  color: var(--secondary-color);
+  background-color: var(--first-bg-color);
+
+  transition: color var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1), background-color var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    background-color: var(--second-bg-color);
+  }
+}
+
+.social-contacts__icon {
+  fill: currentColor;
+}
