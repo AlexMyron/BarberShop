@@ -17,12 +17,12 @@
   <header class="page-header">
     <div class="page-header__thumb"></div>
     <div class="container container--page-header">
+      <a href="./index.html" class="logo" title="logo">
+        <svg class="logo__icon">
+          <use href="./images/icons/sprite.svg#logo"></use>
+        </svg>
+      </a>
       <nav class="nav">
-        <a href="./index.html" class="logo" title="logo">
-          <svg class="logo__icon" width="68" height="55">
-            <use href="./images/icons/sprite.svg#logo"></use>
-          </svg>
-        </a>
         <ul class="nav__nav-menu">
           <li class="nav__item">
             <a href="#about-us" class="nav__link" title="about us">
@@ -53,7 +53,7 @@
           </a>
         </li>
         <li class="header-contacts__item">
-          <a class="button link" href="#booking" title="book now" data-modal-open>Онлайн запись</a>
+          <a class="button link" href="" title="book now" data-modal-open>Онлайн запись</a>
         </li>
       </ul>
       <ul class="social-list social-list--rotated">
@@ -64,6 +64,11 @@
           <a class="social-list__link link" href="" title="youtube link">Youtube</a>
         </li>
       </ul>
+      <button class="button button--menu-button">
+        <svg class="icon-burger">
+          <use href="./images/icons/sprite.svg#icon-burger"></use>
+        </svg>
+      </button>
     </div>    
   </header>
   <main>
@@ -76,7 +81,7 @@
         </p>
         <h1 class="title title--margin">BarberShop</h1>
         <p class="description description--margin">
-          Мы эксперты в модных мужских стрижках.<br/>Работаем быстро, осторожно и со вкусом.
+          Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.
         </p>
         <div class="navy-buttons">
           <button type="button" class="btn btn--grey">Назад</button>
@@ -99,20 +104,20 @@
         <div class="about-us__description">
           <p class="subtitle-text subtitle-text--secondary">о нас</p>
           <h2 class="section-title section-title--margin">Лучший Барбершоп <br/>твоего города</h2>
-          <p>
+          <p class="about-us__pre-text">
             Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.
           </p>
           <p class="about-us__text text">
             Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!
           </p>
-          <a class=" button button--white" href="#booking" title="book now" data-modal-open>Онлайн запись</a>
+          <a class=" button button--white" href="" title="book now" data-modal-open>Онлайн запись</a>
         </div>
       </div>
     </section>
 
     <!-- Services and Prices -->
     <section class="services" id="services">
-      <div class="container">
+      <div class="container container--services">
         <p class="subtitle-text grey">
           Проведи время в компании лучших мастеров
         </p>
@@ -159,7 +164,7 @@
             </tbody>
           </table>
         </div>
-        <a class="button button--services" href="#booking" title="book now" data-modal-open>Онлайн запись</a>
+        <a class="button button--services" href="" title="book now" data-modal-open>Онлайн запись</a>
       </div>
     </section>
 

@@ -13,16 +13,6 @@
     color: var(--grey-color-60);
   }
 
-  &--secondary {
-    color: var(--secondary-color);
-  }
-
-  &--no-transform {
-    color: var(--secondary-color);
-    
-    text-transform: none;
-  }
-
   &::before {
     content: '';
     display: inline-block;
@@ -35,3 +25,16 @@
     display: none;
   }
 }
+
+//   &--secondary {
+//     color: var(--secondary-color);
+//   }
+
+//   &--no-transform {
+//     color: var(--secondary-color);
+    
+//     text-transform: none;
+//   }
+
+  
+// }

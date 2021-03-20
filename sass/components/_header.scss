@@ -1,91 +1,138 @@
-
 .page-header {
-  width: 1280px;
-  margin-right: auto;
-  margin-left: auto;
   position: relative;
 }
 
 .page-header__thumb {
-  width: 1125px;
-  height: 680px;
   position: absolute;
   top: 0;
+  left: 0;
   right: 0;
+  width: 100%;
+  min-width: 480px;
+  height: 580px;
+  overflow-y: hidden;
+
   z-index: -1;
+
+  background: {
+    color: #ccc;
+    image: url(../../images/slider-imgs/Slider-1-mibile.jpg);
+    size: cover;
+    position: center;
+  }
+}
+ 
+.icon-burger {
+  width: 24px;
+  height: 16px;
+  fill: currentColor;
+}
+
+@include media-max (767) {
+  .nav,
+  .header-contacts {
+    display: none;
+  }
   
-  background-image: linear-gradient(to bottom, rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/slider-imgs/Slider-1.jpg);
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-size: contain;
-}
-
-.nav {
-  display: flex;
-  align-items: center;
-}
-
-.nav__nav-menu {
-  display: flex;
-  margin-left: 71px;
-}
-
-.nav__item {
-  & + & {
-    margin-left: 40px;
-  }
-} 
-
-.nav__link {
-  position: relative;
-  padding-top: 52px;
-  padding-bottom: 52px;
-
-  color: var(--third-color);
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.1em;
-  text-decoration: none;
-
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
+  .logo__icon {
+    width: 68px;
+    height: 55px;
+    fill: var(--third-color);
   }
 
-  &::after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    content: '';
-    display: block;
-    width: 100%;
-    height: 4px;
-    border-radius: 4px;
-    opacity: 0;
+  .logo {
+    height: 55px;
+  }
+}
+
+
+
+
+// .page-header {
+//   width: 1280px;
+//   margin-right: auto;
+//   margin-left: auto;
+//   position: relative;
+// }
+
+// .page-header__thumb {
+//   width: 1125px;
+//   height: 680px;
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   z-index: -1;
   
-    background-color: var(--accent-color);
+//   background-image: linear-gradient(to bottom, rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/slider-imgs/Slider-1.jpg);
+//   background-repeat: no-repeat;
+//   background-position: top right;
+//   background-size: contain;
+// }
+
+// .nav {
+//   display: flex;
+//   align-items: center;
+// }
+
+// .nav__nav-menu {
+//   display: flex;
+//   margin-left: 71px;
+// }
+
+// .nav__item {
+//   & + & {
+//     margin-left: 40px;
+//   }
+// } 
+
+// .nav__link {
+//   position: relative;
+//   padding-top: 52px;
+//   padding-bottom: 52px;
+
+//   color: var(--third-color);
+//   font-size: 12px;
+//   line-height: 1.33;
+//   letter-spacing: 0.1em;
+//   text-decoration: none;
+
+//   &:hover,
+//   &:focus {
+//     color: var(--accent-color);
+//   }
+
+//   &::after {
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+//     content: '';
+//     display: block;
+//     width: 100%;
+//     height: 4px;
+//     border-radius: 4px;
+//     opacity: 0;
   
-    transform: scaleX(0);
-    transition: transform var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
-  }
+//     background-color: var(--accent-color);
+  
+//     transform: scaleX(0);
+//     transition: transform var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
+//   }
 
-  &:hover::after {
-    opacity: 1;
-    transform: scaleX(1);
-  }
-}
+//   &:hover::after {
+//     opacity: 1;
+//     transform: scaleX(1);
+//   }
+// }
 
-.logo__icon {
-  fill: var(--secondary-color);
-}
 
-/* .header-contacts */
-.header-contacts {
-  display: flex;
-  margin-left: auto;
-}
 
-.header-contacts__item {
-  & + & {margin-left: 40px;
-  }
-}
+// /* .header-contacts */
+// .header-contacts {
+//   display: flex;
+//   margin-left: auto;
+// }
+
+// .header-contacts__item {
+//   & + & {margin-left: 40px;
+//   }
+// }
